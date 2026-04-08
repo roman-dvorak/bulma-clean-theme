@@ -39,11 +39,11 @@ features:
       icon: fa-fighter-jet
 rating: 3
 buttons:
-    - url: https://example-shop.com/product/ABC124
+    - url: https://example.com/product/ABC124
       text: Buy on Amazon
       class: is-primary
-      icon_class: fas fa-shopping-cart
-    - url: https://ebay.com/item/123
+      icon: fa-shopping-cart
+    - url: https://example.com/item/123
       text: Buy on eBay
       class: is-link
 ```
@@ -57,19 +57,19 @@ You can add one or more buttons to your product pages by including the `buttons`
 - `url`: (Required) The URL to your e-shop or product purchase page
 - `text`: (Optional) Button text (defaults to "Buy it")
 - `class`: (Optional) Bulma button class for styling (e.g., `is-primary`, `is-link`, `is-success`)
-- `icon_class`: (Optional) Font Awesome icon class (e.g., `fas fa-shopping-cart`)
-- `icon`: (Optional) HTTP link to a custom PNG image for the button (displays image instead of button)
+- `icon`: (Optional) Font Awesome icon class (e.g., `fa-shopping-cart`)
+- `image`: (Optional) HTTP link to a custom PNG image for the button (displays image instead of button)
 
 Buttons are displayed side by side, right-aligned, and appear below the product features section.
 
 **Example with multiple standard buttons:**
 ```yaml
 buttons:
-    - url: https://example-shop.com/product/ABC124
+    - url: https://example.com/product/ABC124
       text: Buy on Amazon
       class: is-primary
-      icon_class: fas fa-shopping-cart
-    - url: https://ebay.com/item/123
+      icon: fa-shopping-cart
+    - url: https://example.com/item/123
       text: Buy on eBay
       class: is-link
 ```
@@ -77,8 +77,8 @@ buttons:
 **Example with custom icon image:**
 ```yaml
 buttons:
-    - url: https://example-shop.com/product/ABC124
-      icon: https://example.com/custom-button.png
+    - url: https://example.com/product/ABC124
+      image: https://example.com/custom-button.png
       text: Buy it
 ```
 
@@ -123,7 +123,7 @@ collections:
   products: 
     output: true
     layout: product
-    image: https://via.placeholder.com/800x600
+    image: https://picsum.photos/id/10/600/480
     show_sidebar: false
 ```
 

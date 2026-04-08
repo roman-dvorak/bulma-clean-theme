@@ -15,10 +15,10 @@ features:
       icon: fa-fighter-jet
 rating: 3
 buttons:
-    - url: https://example-shop.com/product/ABC124
+    - url: https://example.com/product/ABC124
       text: Buy it now
       class: is-primary
-      icon_class: fas fa-shopping-cart
+      icon: fa-shopping-cart
 ---
 
 This is the content about the product.
